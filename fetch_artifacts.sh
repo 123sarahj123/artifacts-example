@@ -2,4 +2,4 @@
 
 set -eu
 
-buildkite-agent meta-data get "foo"
+buildkite-agent meta-data get "foo2"
