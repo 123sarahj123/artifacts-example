@@ -4,4 +4,4 @@ set -eu
 
 echo "Very important file" > important_file.txt
 
-buildkite-agent artifact upload important_file.txt
+buildkite-agent meta-data set "foo" < ./tmp/meta-data-value
