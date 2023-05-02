@@ -1,0 +1,4 @@
+#!/bin/bash
+get-caller-identity
+aws sts assume-role --role-arn arn:aws:iam::253213882263:role/sarah-support-test-Role --role-session-name test-assumeRole
+get-caller-identity

@@ -4,3 +4,5 @@ steps:
 - wait
 - label: ":arrow_double_down::package: Fetch artifacts"
   command: "fetch_artifacts.sh"
+- label: "testing assumeRole in AWS"
+  command: assumeRoleTestScript
