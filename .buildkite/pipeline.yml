@@ -1,8 +1,16 @@
+# steps:
+# - label: ":arrow_double_up::package: Generate artifacts"
+#   command: "generate_artifacts.sh"
+# - wait
+# - label: ":arrow_double_down::package: Fetch artifacts"
+#   command: "fetch_artifacts.sh"
+# - label: "testing assumeRole in AWS"
+#   command: assumeRoleTestScript
+
 steps:
-- label: ":arrow_double_up::package: Generate artifacts"
-  command: "generate_artifacts.sh"
-- wait
-- label: ":arrow_double_down::package: Fetch artifacts"
-  command: "fetch_artifacts.sh"
-- label: "testing assumeRole in AWS"
-  command: assumeRoleTestScript
+  - command: true
+    label: "Pipeline #1 : Job #1"
+    concurrency: 1
+    concurrency_group: 'sarahs-test-CG'
+  - command: true
+    label: "Pipeline #1 : Job #2"

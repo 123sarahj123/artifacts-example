@@ -1,0 +1,7 @@
+steps:
+  - command: true
+    label: "Pipeline #2 : Job #1"
+    concurrency: 1
+    concurrency_group: 'sarahs-test-CG'
+  - command: true
+    label: "Pipeline #2 : Job #2"
