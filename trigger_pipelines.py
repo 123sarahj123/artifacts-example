@@ -22,7 +22,7 @@ def trigger_pipeline(pipeline_yaml):
     print(f'Pipeline {pipeline_yaml} triggered successfully')
 
 # Trigger the first pipeline
-trigger_pipeline('pipeline.yml')
+trigger_pipeline('.buildkite/pipeline.yml')
 
 # Sleep for the desired time (0.3 seconds in this case)
 # time.sleep(0.3)
