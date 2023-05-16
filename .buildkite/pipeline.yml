@@ -7,6 +7,9 @@
 # - label: "testing assumeRole in AWS"
 #   command: assumeRoleTestScript
 
+name: "pipeline"
+repository: "https://github.com/123sarahj123/artifacts-example.git"
+
 steps:
   - command: true
     label: "Pipeline #1 : Job #1"
